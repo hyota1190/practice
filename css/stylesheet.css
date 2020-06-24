@@ -1,0 +1,200 @@
+/*=========================
+共通
+=========================*/
+
+body {
+  color: #082848;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;     /* ①行間の設定漏れ */
+}
+
+a {
+  text-decoration: none;    /* ⑥アンダーライン消す*/
+  color: #082848
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 980px;     /* ②最大幅の設定漏れ */
+}
+
+.clear::after {
+  content: "";
+  clear: both;          /* ④設定漏れ */
+  display: block;       /* このまま覚える */
+}
+
+a:hover {
+  opacity: 0.7;
+}
+img {
+  width: 100%;          /* ⑦設定漏れ */
+  height: auto;         /* 意味覚える */
+}
+
+/*=========================
+header
+=========================*/
+
+header {
+  padding: 20px;        /* ③paddingにて位置調整 */
+}
+
+.header-left {
+  float: left;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-right {
+  float: right;
+}
+
+.header-nav-item {
+  float: left;
+  margin-left: 50px;
+}
+
+.header-nav-item a {    /*⑤上の奴と二つに分ける*/
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 36px;  
+}
+
+/*=========================
+top
+=========================*/
+
+.top {
+  background-image: url(../img/main-vsual-nontitle.png);
+  background-size: cover;   /* ⑨背景埋め尽くす系 */
+  padding: 80px;            /* paddingでスペース調整 */
+}
+
+.top-text {
+  margin: auto;
+}
+
+.top-maintext {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.top-subtext {
+  font-size: 18px;
+  text-align: center;
+}
+
+/*=========================
+about
+=========================*/
+
+.about {
+  margin-bottom: 60px;
+
+}
+
+.about-title {
+  font-size: 32px;
+  padding: 56px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.about-img {
+  float: left;
+  width: 48%;
+}
+
+.about-explain {
+  width: 48%;
+  float: right;
+}
+
+/*=========================
+course
+=========================*/
+
+.course {
+  background-color: #e3fcf4;
+  padding-bottom: 48 px;
+}
+
+.course-title {
+  font-size: 32px;
+  padding: 56px 0;
+  font-weight: bold;
+  text-align: center;
+}
+.course-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.course-wrapper-item{
+  width: 30%;
+}
+
+/*=========================
+contact
+=========================*/
+
+.contact-title {
+  font-size: 32px;
+  padding: 56px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact-message {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+input[type="email"] {
+  width: 600px;
+  padding: 15px;
+  display: block;
+  margin: auto;
+  border: 3px solid #d8d8d8;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 18px 60px;
+  display: block;
+  margin: auto;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 50px;
+}
+
+.btn-register {
+  background-color: #ec6d64;
+  border: none;
+}
+
+/*=========================
+footer
+=========================*/
+
+footer {
+  background-color: #082848;
+}
+
+.footer-copyright {
+    float:right;
+    padding: 20px 0;
+    color: white;
+    font-size: 12px;
+}
